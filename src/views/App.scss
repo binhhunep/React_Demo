@@ -1,0 +1,144 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.first input
+{
+  margin: 0.5rem;
+}
+.third
+{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.third:hover
+{
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: rotate(360deg);
+}
+.session3-fieldset
+{
+  width: 50vmax;
+  padding: 2%;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px 10px red;
+  color: #1047b5;
+}
+.session3-fieldset legend
+{
+  color: aqua;
+  text-shadow: 2px 2px 5px red;
+  font-weight: bold;
+  font-size: 2rem;
+  animation:legend 5s infinite forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+@keyframes legend {
+  from {
+    transform:rotateX(0deg) scaleY(0.5);
+  }
+  to {
+    transform: rotateX(360deg) scaleY(1.2);
+  }
+}
+.session3-fieldset .fieldset-form
+{
+  display: flex;
+  flex-direction: column;
+}
+.session3-fieldset .form-firstname
+{
+  display: flex;
+  justify-content: start;
+}
+.session3-fieldset .form-lastname
+{
+  display: flex;
+  justify-content: start;
+}
+.session3-fieldset .input
+{
+  width: 100%;
+  height: 2vmax;
+  margin-bottom: 2%;
+  font-size: 2vmax;
+  padding: 1vmax;
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+}
+.session3-fieldset .login
+{
+  background-color:#0D74F8;
+  color: white;
+  font-weight: bold;
+}
+hr
+{
+  margin: 2vmax;
+}
+.form-reset
+{
+  font-size: 2vmax;
+  margin-top:1vmax;
+}
+#login
+{
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  width: 100%;
+  height: 4vmax;
+}
+#newlogin
+{
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  width: 50%;
+  height: 4vmax;
+  color: white;
+  font-weight: bold;
+  background-color: #30971A;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

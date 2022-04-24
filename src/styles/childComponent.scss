@@ -1,0 +1,90 @@
+fieldset
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color:blanchedalmond;
+    width: 60vmax;
+    padding: 4vmax;
+    font-family: cursive;
+    box-shadow: 5px 5px 10px red;
+    border-radius: 5px;
+}
+fieldset legend
+{
+    font-size: 3vmax;
+    text-shadow: 2px 2px 10px red;
+    color: rgb(35, 144, 52);
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: legend1 5s forwards infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+fieldset div
+{
+    font-size: 2vmax;
+    color: black;
+    text-align: start;
+}
+.infor-content
+{
+    display: flex;
+    flex-direction: row;
+    /* border: solid; */
+    justify-content: space-around;
+    align-items: center;
+}
+#x-btn
+{
+    text-align: center;
+    border-radius: 50%;
+    width: 2vmax;
+    height: 2vmax;
+    background-color: rgb(158, 189, 35);
+    font-weight: bold;
+    font-size: 1vmax;
+    line-height: 2vmax;
+}
+@keyframes legend1{
+    from{transform: rotateY(0deg) scaleY(0.5);}
+    to{transform: rotateY(360deg) scaleY(1.2);}
+}
+fieldset #show{
+    align-self: center;
+    width: 15Vmax;
+    font-size: 2vmax;
+    font-family: cursive;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    background-color:#0D74F8;
+    padding: 0.5vmax;
+    /* margin-bottom: 1.5vmax; */
+    /* margin-right: 1vmax ; */
+} 
+fieldset #hide{
+    /* align-self: center; */
+    width: 15Vmax;
+    font-size: 2vmax;
+    font-family: cursive;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    background-color:#30971A;
+    padding: 0.5vmax;
+    /* margin-top: 1.5vmax; */
+}     
+fieldset .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1vmax 0;
+}
+#para
+{
+    width: calc(95% - 2vmax)
+}
